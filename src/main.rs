@@ -12,7 +12,7 @@ pub async fn send_request(url: &str) -> String {
         .get(url)
         .send()
         .await
-        .expect("Failed to get response")
+        .expect("Failed to get response!")
         .text()
         .await
         .expect("Failed to convert payload")
